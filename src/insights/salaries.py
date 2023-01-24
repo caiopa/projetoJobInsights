@@ -41,7 +41,7 @@ def filter_by_salary_range(
             if matches_salary_range(job, salary):
                 jobs_list.append(job)
         except ValueError:
-            pass
+            continue
     return jobs_list
     """Filters a list of jobs by salary range
 
